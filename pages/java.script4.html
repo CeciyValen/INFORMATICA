@@ -10,12 +10,12 @@
     <h1>Funciones en Js</h1>
     <button onclick="saludar()">saludo</button>
     <h3>Parametros y argumentos</h3>
-    <button onclick="solicitarDatos()">ejemplo<button>
+    <button onclick="solicitarDatos()">ejemplo</button>
     <script>
         function saludar(){      
             let nombre=prompt("Cecilia:");
-            if(nombre){}
-                alert("hola,"+nombre);   {
+            if(nombre){
+                alert("hola,"+nombre);
 
             }else{
                 alert("Debes escribir tu nombre");
@@ -24,12 +24,14 @@
 
         function solicitarDatos(){
             let solicitarPrecio=prompt("precio:");
-            let solicitoCantidad=prompt("cantidad:");
+            let solicitarCant=prompt("cantidad:");
             calcularPrecio(solicitarPrecio,solicitarCant);
-            let total=precio*cantidad;
-            alert("El precio total es:"+total);
         }
 
+        function calcularPrecio(precio, cantidad){
+        let total=precio*cantidad;
+            alert("El precio total es:" + total);
+        }
 
 
 
