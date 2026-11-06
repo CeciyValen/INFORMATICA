@@ -18,7 +18,10 @@
  <button id="ejemplo2" type="button">Ver</button>
 
   <!--ejemplo 4.3-->
-
+  <h3>El ciclo for...in:</h3>
+  <p>Ejemplo: mostrar datos de la receta.</p>
+  <button id="ejemplo5" type="button">Ver</button>
+  
 
 <script>
     //implementacion del ejemplo 4.1
@@ -44,7 +47,19 @@ alert(mensaje);
 });
 
 //implementacion del ejemplo 4.3
-
+btn5.addEventListener("click", function() {
+let mensaje = "Datos de la receta:\n";
+const receta = {
+nombre: "Ensalada",
+dificultad: "Fácil",
+tiempo: "15 minutos"
+};
+for (let propiedad in receta) {
+mensaje += propiedad + ": " + receta[propiedad] + "\n";
+}
+alert(mensaje);
+});
+</script>
 </script>
 </body>
 </html>
